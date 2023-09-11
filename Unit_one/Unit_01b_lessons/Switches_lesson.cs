@@ -27,7 +27,7 @@ public class GameStates {
 				Console.WriteLine("Starting");
 					break;
 			case States.Playing:
-				Console.WriteLine("Starting");
+				Console.WriteLine("Playing");
 				break;
 			case States.Ending:
 				Console.WriteLine("Ending");
