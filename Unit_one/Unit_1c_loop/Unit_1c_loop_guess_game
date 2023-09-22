@@ -6,4 +6,4 @@ string[] foods ={"Salad", "Apple", "Chocolate"};
 		foreach (var food in foods)
 		{
 			Console.WriteLine("I love " + food + ". It is really good");
-		}
+}
