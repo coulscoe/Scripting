@@ -1,0 +1,60 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Random rnd= new Random();
+		bool playAgain =true;
+		int count;
+		int guess;
+		int answer;
+		String response;
+		
+		while (playAgain)
+		{
+			response ="";
+			count =0;
+			guess =0;
+			answer= rnd.Next(1,11);
+			
+			while(guess != answer)
+			{
+				Console.WriteLine("Guess a number between 1 and 10.");
+				guess= Convert.ToInt32(Console.ReadLine());
+				Console.WriteLine("Guess: " +guess);
+				
+				if(guess<answer)
+				{
+					Console.WriteLine("Too low. Guess again.");
+				}
+				else if (guess < answer)
+				{
+					Console.WriteLine("Too high. Guess again.");
+				}
+				count++;
+			}
+					Console.WriteLine("Number: " + answer);
+					Console.WriteLine("Congrats! You completed the challange. You did it in " + count +" tries." );
+			
+					Console.WriteLine("Would you like to play again? (Y/N): ");
+					response =Console.ReadLine();
+					response = response.ToUpper();
+			
+					if (response == "Y")
+					{
+						playAgain = true;
+					}
+					else 
+					{
+						playAgain = false;
+					}
+				}
+				Console.WriteLine("Thanks for playing!");
+		}
+	}
+string[] foods ={"Salad", "Apple", "Chocolate"};
+		foreach (var food in foods)
+		{
+			Console.WriteLine("I love " + food + ". It is really good");
+}
