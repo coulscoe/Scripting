@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public Transform blaster;
     public GameObject lazerBolt;
+    public GameObject pickup;
 
     // Update is called once per frame
     void Update()
@@ -42,5 +44,16 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);
+       
     }
+    //should destroy the object pickup when it collides with the player
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name =="pickup")
+        {
+            Destroy(col.gameObject);
+        }
+    }
+
+    
 }
