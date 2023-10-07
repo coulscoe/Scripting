@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         //if invent is greater than 0, then it will display the amount it has.
         if(invent > 0)
         {
-            print("Items in the inventory:" +invent);
+            Debug.Log("Items in the inventory:" +invent);
         }
     }
     //deletes any object with a trigger that hits the player
