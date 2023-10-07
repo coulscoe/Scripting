@@ -339,6 +339,33 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7930431147600009043, guid: bf9fa2a79abf02f428f6d3dfbf4447f3, type: 3}
   m_PrefabInstance: {fileID: 6334549521036489823}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &385978408
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385978407}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +565,7 @@ GameObject:
   - component: {fileID: 1688824783}
   - component: {fileID: 1688824782}
   - component: {fileID: 1688824786}
+  - component: {fileID: 1688824787}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -650,6 +678,33 @@ MonoBehaviour:
   blaster: {fileID: 1935816841}
   lazerBolt: {fileID: 6830145806087855480, guid: f076c098621fe3944b570aa713580b8b, type: 3}
   pickup: {fileID: 385978407}
+--- !u!54 &1688824787
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688824781}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1935816840
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,7 +791,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7930431147600009043, guid: bf9fa2a79abf02f428f6d3dfbf4447f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 385978408}
   m_SourcePrefab: {fileID: 100100000, guid: bf9fa2a79abf02f428f6d3dfbf4447f3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
