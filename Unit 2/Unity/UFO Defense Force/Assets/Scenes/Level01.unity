@@ -159,7 +159,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -262,7 +262,6 @@ MonoBehaviour:
   - {fileID: 605798999478099790, guid: 7fb016e9c28d7914f9be12b08c26b3d1, type: 3}
   - {fileID: 7592752966449076118, guid: fdd396b8984e38749bcb4400a2d6d1ea, type: 3}
   - {fileID: 2005419143841495824, guid: b3ef68d7e5229374ead6e67870cd3db2, type: 3}
-  ufoIndex: 2
 --- !u!4 &615369844
 Transform:
   m_ObjectHideFlags: 0
@@ -432,8 +431,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -458,7 +457,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalPosition: {x: 0, y: 30, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -477,7 +476,6 @@ GameObject:
   - component: {fileID: 1688824783}
   - component: {fileID: 1688824782}
   - component: {fileID: 1688824786}
-  - component: {fileID: 1688824787}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -502,7 +500,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -565,7 +563,7 @@ Transform:
   m_GameObject: {fileID: 1688824781}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28, y: 0, z: -12.14}
+  m_LocalPosition: {x: 0.28, y: 0.92, z: -12.14}
   m_LocalScale: {x: 1.28, y: 0.87666005, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -586,38 +584,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 25
-  xRange: 30
+  xRange: 27
   blaster: {fileID: 1935816841}
   lazerBolt: {fileID: 6830145806087855480, guid: f076c098621fe3944b570aa713580b8b, type: 3}
   pickup: {fileID: 0}
   invent: 0
---- !u!54 &1688824787
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688824781}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1 &1935816840
 GameObject:
   m_ObjectHideFlags: 0
