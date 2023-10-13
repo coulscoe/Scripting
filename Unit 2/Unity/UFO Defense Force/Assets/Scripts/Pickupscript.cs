@@ -9,6 +9,7 @@ public class Pickupscript : MonoBehaviour
     public float topBounds = 30.0f;
 
     public float lowerBounds = -10.0f;
+    public int invent;
     // Update is called once per frame
     void Update()
     {

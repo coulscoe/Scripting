@@ -11,12 +11,17 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public Transform blaster;
     public GameObject lazerBolt;
+    public int invent;
     public GameObject pickup;
-    public int invent =0;
-
     // Update is called once per frame
     void Update()
     {
+        //if invent is greater than 0, then it will display the amount it has.
+        if (invent > 0)
+        {
+            Debug.Log("Items in the inventory:" + invent);
+        }
+
         //Set horizontalInput to receive values from keyboard
         horizontalInput = Input.GetAxis("Horizontal");
         
@@ -39,22 +44,19 @@ public class PlayerController : MonoBehaviour
             //create lazerBolt at the blaster transform position maintaining the objects rotation
             Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
         }
-        //if invent is greater than 0, then it will display the amount it has.
-        if(invent > 0)
-        {
-            Debug.Log( "Items in the inventory:" +invent);
-        }
+       
     }
     //deletes any object with a trigger that hits the player
-    private void OnTriggerEnter(Collider other)
-    {
+    void OnTriggerEnter(Collider other)
+    { 
         Destroy(other.gameObject);
-        // if the game object is the pickup item it will add a number to the inventory.
-        if (pickup)
+        if (other.gameObject.name=="Pickup(Clone)")
         {
-            invent++;
+            invent++; 
+           
         }
     }
+    
     
 
     

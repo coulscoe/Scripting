@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class CollitionDetect : MonoBehaviour
 {
-   void OnTriggerEnter(Collider other)
+    public GameObject pickup;
+    public int invent =0;
+  /* void OnTriggerEnter(Collider other)
    {
        Destroy(gameObject); // destroy this game object
-       Destroy(other.gameObject);// destroy the other game object it hits
-   }
+       Destroy(other.gameObject);
+   } */
 }
