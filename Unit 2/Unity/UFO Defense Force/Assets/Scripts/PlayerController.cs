@@ -16,10 +16,13 @@ public class PlayerController : MonoBehaviour
     public GameObject pickup;
 
     public GameManager gameManager;
+    public AudioClip boltSound;
+    public AudioSource playerAudio;
 
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        playerAudio = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -51,10 +54,11 @@ public class PlayerController : MonoBehaviour
         {
             //create lazerBolt at the blaster transform position maintaining the objects rotation
             Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
+            playerAudio.PlayOneShot(boltSound, .4f);
         }
        
     }
-    //deletes any object with a trigger that hits the player
+    //deletes pickup object with a trigger that hits the player
     void OnTriggerEnter(Collider other)
     {   
         if (other.gameObject.name=="Pickup(Clone)")

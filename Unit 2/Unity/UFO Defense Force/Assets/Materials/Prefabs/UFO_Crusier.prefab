@@ -137,6 +137,7 @@ MonoBehaviour:
   topBounds: 30
   lowerBounds: -25
   gameManager: {fileID: 0}
+  audioSource: {fileID: 4374891239849403537, guid: 91ad465b7c07f4d4f9063c6b7a57dd00, type: 3}
 --- !u!54 &-4713284811139803511
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -178,3 +179,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
   scoreToGive: 100
+  ufosound: {fileID: 7748892993986144918, guid: e34836163920d0942835c99e65f5ac20, type: 3}

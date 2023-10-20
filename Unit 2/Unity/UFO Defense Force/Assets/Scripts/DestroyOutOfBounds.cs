@@ -10,6 +10,7 @@ public class DestroyOutOfBounds: MonoBehaviour
 
     public float lowerBounds = -10.0f;
     public GameManager gameManager;
+    public GameObject audioSource;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class DestroyOutOfBounds: MonoBehaviour
         else if (transform.position.z < lowerBounds)
         {
             Debug.Log("Game Over");
+            Instantiate(audioSource);
             Destroy(gameObject);
             gameManager.isGameOver = true;
         }
