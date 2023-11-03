@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: material layer
+    uniqueID: 1913098021
+    locked: 0

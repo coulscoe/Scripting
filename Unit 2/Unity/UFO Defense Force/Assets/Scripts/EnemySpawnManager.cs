@@ -11,7 +11,7 @@ public class EnemySpawnManager : MonoBehaviour
     private float spawnRangeX = 20f;
     private float spawnPosZ = 20f;
     private float startDelay =2;
-    private float spawnInterval = 1.5f;
+    private float spawnInterval = 1.5f;         
     private int ufoIndex;
     
 
