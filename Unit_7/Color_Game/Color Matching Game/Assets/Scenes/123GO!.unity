@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 444736155}
   - component: {fileID: 444736154}
   m_Layer: 0
-  m_Name: CoroutineObject
+  m_Name: CountDownCoroutineObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
