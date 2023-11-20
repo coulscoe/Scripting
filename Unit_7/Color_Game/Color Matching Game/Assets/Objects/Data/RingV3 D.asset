@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a18f3dbae177b943bb8358d47dd769d, type: 3}
-  m_Name: V3 C
+  m_Name: RingV3 D
   m_EditorClassIdentifier: 
-  value: {x: -3, y: 5, z: 0}
+  value: {x: 4, y: 5, z: 0}
