@@ -32,11 +32,11 @@ public class CoroutineBehavior : MonoBehaviour
         while (counterNum.value >0)
         { 
             repeatCountEvent.Invoke();
+            yield return wfsobj;
             counterNum.value--;
             yield return wfsobj;
-           
         }
-        endCountEvent .Invoke();
+        endCountEvent.Invoke();
     }
 
     public void StartRepeatUntilFalse()

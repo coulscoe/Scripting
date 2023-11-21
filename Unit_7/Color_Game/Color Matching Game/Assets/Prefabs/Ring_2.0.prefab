@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: -6475308180436805100}
   - component: {fileID: -6156508376116523650}
   - component: {fileID: 7168670806477851908}
+  - component: {fileID: -8782116387699337694}
   m_Layer: 7
   m_Name: Ring_2.0
   m_TagString: Untagged
@@ -200,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3842b4d98fce94c9d67d84f366ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3.4
+  seconds: 2.7
 --- !u!54 &1051536814310708481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -210,7 +211,7 @@ Rigidbody:
   m_GameObject: {fileID: 6084698145448481468}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 4
+  m_Drag: 3
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -301,6 +302,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2660535060118850740}
+        m_TargetAssemblyTypeName: SpriteBehavior, Assembly-CSharp
+        m_MethodName: ChangeRendererColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 95967872731decf409f98d2953775d68, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -329,3 +342,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.8, y: 9.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8782116387699337694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084698145448481468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f867bf1e5978ce347b07f91be06ccfb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: 95967872731decf409f98d2953775d68, type: 2}
