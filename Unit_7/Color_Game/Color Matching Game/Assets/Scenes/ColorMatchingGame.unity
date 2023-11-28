@@ -576,6 +576,7 @@ GameObject:
   - component: {fileID: 763259199}
   - component: {fileID: 763259198}
   - component: {fileID: 763259197}
+  - component: {fileID: 763259200}
   m_Layer: 5
   m_Name: ScoreNum
   m_TagString: Untagged
@@ -671,6 +672,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763259195}
   m_CullTransparentMesh: 1
+--- !u!114 &763259200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763259195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61c503bb0166f041b7d28c655668dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 19fa44dbd3e1ad249bb1076b9d6e4a98, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 763259197}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b1131ab6bd782314bb5ccf363762ff93, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &832556773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1297,7 @@ GameObject:
   - component: {fileID: 1425476782}
   - component: {fileID: 1425476781}
   - component: {fileID: 1425476780}
+  - component: {fileID: 1425476783}
   m_Layer: 5
   m_Name: HighScoreNum
   m_TagString: Untagged
@@ -1375,6 +1405,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425476778}
   m_CullTransparentMesh: 1
+--- !u!114 &1425476783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425476778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61c503bb0166f041b7d28c655668dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 19fa44dbd3e1ad249bb1076b9d6e4a98, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1425476780}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1461e415fb58419448ac928c7cf7b4b5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1490145893
 GameObject:
   m_ObjectHideFlags: 0
