@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5840711276034335951}
   - component: {fileID: 6460318202453622521}
   - component: {fileID: 2660535060118850740}
+  - component: {fileID: 2941925269171522588}
   m_Layer: 7
   m_Name: HiddenDot
   m_TagString: Untagged
@@ -97,6 +98,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26abcfbf977eb045b4d278787bb30ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2941925269171522588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346598356729102247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61c503bb0166f041b7d28c655668dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: f08e6f1d407d49340b20a59acefc7fb3, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6460318202453622521}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6084698145448481468
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,6 +143,7 @@ GameObject:
   - component: {fileID: -6156508376116523650}
   - component: {fileID: 7168670806477851908}
   - component: {fileID: -8782116387699337694}
+  - component: {fileID: 2024321794958221682}
   m_Layer: 7
   m_Name: Ring_2.0
   m_TagString: Untagged
@@ -359,3 +389,43 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: 95967872731decf409f98d2953775d68, type: 2}
+--- !u!114 &2024321794958221682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084698145448481468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61c503bb0166f041b7d28c655668dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: f08e6f1d407d49340b20a59acefc7fb3, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -7457674087855198401}
+        m_TargetAssemblyTypeName: SpriteBehavior, Assembly-CSharp
+        m_MethodName: ChangeRenderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 945df95182156e444b3873d0d6365936, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ColorID, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7168670806477851908}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
