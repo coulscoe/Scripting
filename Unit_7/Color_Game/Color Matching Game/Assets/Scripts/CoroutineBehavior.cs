@@ -35,6 +35,7 @@ public class CoroutineBehavior : MonoBehaviour
             yield return wfsobj;
             counterNum.value--;
             yield return wfsobj;
+            
         }
         endCountEvent.Invoke();
     }
